@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		F879914927FCADC200914262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879914827FCADC200914262 /* AppDelegate.swift */; };
 		F879914B27FCADC200914262 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879914A27FCADC200914262 /* SceneDelegate.swift */; };
-		F879914D27FCADC200914262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879914C27FCADC200914262 /* ViewController.swift */; };
+		F879914D27FCADC200914262 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879914C27FCADC200914262 /* CardViewController.swift */; };
 		F879915027FCADC200914262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F879914E27FCADC200914262 /* Main.storyboard */; };
 		F879915227FCADC300914262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F879915127FCADC300914262 /* Assets.xcassets */; };
 		F879915527FCADC300914262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F879915327FCADC300914262 /* LaunchScreen.storyboard */; };
+		F879916227FCAF5700914262 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879916127FCAF5700914262 /* Card.swift */; };
+		F879916427FCB03000914262 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879916327FCB03000914262 /* CardController.swift */; };
+		F879916727FCB0AF00914262 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879916627FCB0AF00914262 /* CardError.swift */; };
+		F879916927FCB0D300914262 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F879916827FCB0D300914262 /* UIViewController+alert.swift */; };
+		F8CC1DA027FCC0DC00BFD9ED /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CC1D9F27FCC0DC00BFD9ED /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F879914527FCADC200914262 /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F879914827FCADC200914262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F879914A27FCADC200914262 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F879914C27FCADC200914262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F879914C27FCADC200914262 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		F879914F27FCADC200914262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F879915127FCADC300914262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F879915427FCADC300914262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F879915627FCADC300914262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F879916127FCAF5700914262 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F879916327FCB03000914262 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		F879916627FCB0AF00914262 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		F879916827FCB0D300914262 /* UIViewController+alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		F8CC1D9F27FCC0DC00BFD9ED /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		F879914727FCADC200914262 /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
-				F879914827FCADC200914262 /* AppDelegate.swift */,
-				F879914A27FCADC200914262 /* SceneDelegate.swift */,
-				F879914C27FCADC200914262 /* ViewController.swift */,
-				F879914E27FCADC200914262 /* Main.storyboard */,
-				F879915127FCADC300914262 /* Assets.xcassets */,
-				F879915327FCADC300914262 /* LaunchScreen.storyboard */,
-				F879915627FCADC300914262 /* Info.plist */,
+				F879916527FCB09D00914262 /* Helpers */,
+				F879916027FCAF4D00914262 /* Model */,
+				F879915D27FCAE2C00914262 /* Resources */,
+				F879915E27FCAE4400914262 /* ViewControllers */,
+				F879915F27FCAE4F00914262 /* Storyboards */,
 			);
 			path = DeckOfOneCard;
+			sourceTree = "<group>";
+		};
+		F879915D27FCAE2C00914262 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F879914827FCADC200914262 /* AppDelegate.swift */,
+				F879914A27FCADC200914262 /* SceneDelegate.swift */,
+				F879915127FCADC300914262 /* Assets.xcassets */,
+				F879915627FCADC300914262 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F879915E27FCAE4400914262 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F879914C27FCADC200914262 /* CardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F879915F27FCAE4F00914262 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F879914E27FCADC200914262 /* Main.storyboard */,
+				F879915327FCADC300914262 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F879916027FCAF4D00914262 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F879916127FCAF5700914262 /* Card.swift */,
+				F879916327FCB03000914262 /* CardController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F879916527FCB09D00914262 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F879916627FCB0AF00914262 /* CardError.swift */,
+				F8CC1D9F27FCC0DC00BFD9ED /* String+.swift */,
+				F879916827FCB0D300914262 /* UIViewController+alert.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F879914D27FCADC200914262 /* ViewController.swift in Sources */,
+				F879916427FCB03000914262 /* CardController.swift in Sources */,
+				F879914D27FCADC200914262 /* CardViewController.swift in Sources */,
+				F8CC1DA027FCC0DC00BFD9ED /* String+.swift in Sources */,
+				F879916727FCB0AF00914262 /* CardError.swift in Sources */,
+				F879916927FCB0D300914262 /* UIViewController+alert.swift in Sources */,
 				F879914927FCADC200914262 /* AppDelegate.swift in Sources */,
 				F879914B27FCADC200914262 /* SceneDelegate.swift in Sources */,
+				F879916227FCAF5700914262 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 37H8X6K6NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCard/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 37H8X6K6NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCard/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
